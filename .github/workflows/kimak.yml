@@ -1,0 +1,21 @@
+name: Manual Trigger Jupyter notebook
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Jupyter notebook
+        uses: danielfrg/run-notebook@v1.0.0
+        with:
+          notebook: "hana_cara.ipynb"
+
+      - name: Show success message
+        if: always()
+        run: echo "it Worked."
