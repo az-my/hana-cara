@@ -14,7 +14,7 @@ jobs:
       - name: Run Jupyter notebook
         uses: actions/run-notebook@v2
         with:
-          notebook: "hana-cara.ipynb"
+          notebook: "hana_cara.ipynb"
 
       - name: Show success message
         if: always()
