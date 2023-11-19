@@ -1,9 +1,6 @@
 name: chatgpt
 
 on:
-  push:
-    branches:
-      - main  # Change this to your branch name if different
   workflow_dispatch:
 
 jobs:
