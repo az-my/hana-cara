@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Jupyter notebook
-        uses: actions/run-notebook@v2
+        uses: danielfrg/run-notebook@v1.0.0
         with:
           notebook: "hana_cara.ipynb"
 
